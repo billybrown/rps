@@ -1,0 +1,300 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video 
+{ margin:0;padding:0;border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent; }                 
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section 
+{ display:block; } a {text-decoration: none; color: inherit;}
+
+@font-face {
+    font-family: 'Otari';
+    src: url('fonts/otari-webfont.eot?') format('eot'),
+         url('fonts/otari-webfont.woff') format('woff'),
+         url('fonts/otari-webfont.ttf') format('truetype'),
+         url('fonts/otari-webfont.svg#webfontUriAy6YA') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gnuolane';
+    src: url('fonts/lane-webfont.eot?') format('eot'),
+         url('fonts/lane-webfont.woff') format('woff'),
+         url('fonts/lane-webfont.ttf') format('truetype'),
+         url('fonts/lane-webfont.svg#webfontuEnsOj0d') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/**** Base styles ****/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #F9EDCF;
+  padding: 0 20px 0px 20px;
+}
+
+h1 {
+font: normal 60px/60px Gnuolane, Otari, Georgia, Verdana;
+color: #333;
+text-align: center;
+text-transform: uppercase;
+margin-bottom: 10px;
+}
+
+h2 {
+font: normal 50px/50px Gnuolane, Otari, Georgia, Verdana;
+color: #333;
+text-align: left;
+margin-bottom: 30px;
+}
+
+.player2 {
+text-align: right;
+}
+
+header[role="banner"] {
+margin-top: 20px;
+}
+
+#win_display {
+position: absolute;
+margin-left: 212px;
+width: 600px;
+height: 324px;
+}
+
+.scissorsWin {
+background: url(img/scissorsWin.png);
+}
+
+.rockWin {
+background: url(img/rockWin.png);
+}
+
+.paperWin {
+background: url(img/paperWin.png);
+}
+
+#player1 {
+width: 49%;
+float: left;
+}
+
+#player2 {
+width: 49%;
+float: right;
+}
+
+.play {
+float: left;
+margin-right: 10px;
+}
+
+.fr {
+float: right;
+}
+
+#controlpanel1 {
+width: 450px;
+padding: 20px;
+margin: 300px 0 50px 0;
+float: left;
+}
+
+#controlpanel2 {
+width: 450px;
+padding: 20px;
+margin: 300px 0 50px 0;
+float: right;
+}
+
+.play img {
+opacity: .2;
+  -webkit-transition: opacity .2s ease-in-out;
+     -moz-transition: opacity .2s ease-in-out;
+       -o-transition: opacity .2s ease-in-out;
+          transition: opacity .2s ease-in-out;
+}
+
+.play:hover img {
+opacity: 1;
+}
+
+.fullOpacity {
+}
+
+.button {
+width: 40px;
+height: 40px;
+border-radius: 23px;
+margin: 10px 0 0 8px;
+border: 3px solid #333;
+}
+
+.play:hover .button  {
+cursor: pointer;
+}
+
+.play:active .button  {
+background: #EF723C;
+}
+
+.hilite img {
+  opacity: 1;
+}
+
+.hilite .button {
+background: #EF723C;
+}
+
+.button p {
+font: normal 18px/18px Gnuolane, Otari, Verdana;
+padding: 10px 0 0 0;
+text-align: center;
+text-transform: uppercase;
+color: #333;
+}
+
+#player1_display {
+width: 400px;
+height: 257px;
+z-index: 3;
+position: absolute;
+}
+
+#player2_display {
+width: 400px;
+height: 257px;
+z-index: 3;
+position: absolute;
+margin-left: 100px;
+}
+
+#player1_color {
+width: 400px;
+height: 257px;
+z-index: 2;
+position: relative;
+}
+
+#player2_color {
+width: 400px;
+height: 257px;
+z-index: 2;
+position: relative;
+margin-left: 100px;
+}
+
+#colors1 {
+margin-left: 15px;
+margin-top: 180px;
+}
+
+#colors2 {
+margin-right: 15px;
+margin-top: 180px;
+}
+
+#colors1 div {
+width: 20px;
+height: 20px;
+float: left;
+cursor: pointer;
+}
+
+#colors2 div {
+width: 20px;
+height: 20px;
+float: right;
+cursor: pointer;
+}
+
+.hideit {
+display: none;
+}
+
+.flesh, #flesh_1, #flesh_2 {
+background: #F7E1CB;
+}
+
+.flesh2, #flesh2_1, #flesh2_2 {
+background: #FFBC7F;
+}
+
+.brown, #brown_1, #brown_2 {
+background: #BA8D60;
+}
+
+.brown2, #brown2_1, #brown2_2 {
+background: #966B53;
+}
+
+.brown3, #brown3_1, #brown3_2 {
+background: #EE82F4;
+}
+
+.yellow, #yellow_1, #yellow_2 {
+background: #82DCF4;
+}
+
+.white, #white_1, #white_2 {
+background: #fff;
+}
+
+.martian, #martian_1, #martian_2 {
+background: #97DDA6;
+}
+
+.play_rock {
+background: url(img/rock_bigT.png);
+}
+
+.play_paper {
+background: url(img/paper_bigT.png);
+}
+
+.play_scissors {
+background: url(img/scissors_bigT.png);
+}
+
+.play_rock2 {
+background: url(img/rock_bigT_2.png);
+}
+
+.play_paper2 {
+background: url(img/paper_bigT_2.png);
+}
+
+.play_scissors2 {
+background: url(img/scissors_bigT_2.png);
+}
+.no-fontface h1{
+}
+
+.center {
+  margin: 0px auto 0px;
+  max-width: 1024px;
+  text-align: center;
+  }
+  
+/* >> The Magnificent CLEARFIX: Updated to prevent margin-collapsing on child elements << j.mp/bestclearfix */
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; visibility: hidden; }
+.clearfix:after { clear: both; }
+/* fix clearfix: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
+.clearfix { zoom: 1; }
+
+@media (max-width:1000px) {
+}
+
+@media all and (max-device-width: 480px), all and (max-width: 480px) {
+
+  body {
+  width: 480px;
+  }
+  
+  .center {
+    max-width: 480px;
+  }
+  
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="utf-8">
+	<title>RPS - Rock Paper Scissors</title>
+	<meta name="description" content="Lets play Rock Paper Scissors!">
+	<meta name="author" content="Willy Dynomite - b.illbrown.com">
+	<!-- Big thanks to Addison at Eightbit.me for inspiration and Ray Larabie for the font Gnoulane (http://typodermicfonts.com/). -->
+	<link rel="shortcut icon" href="img/faviconRPS.ico">
+	<link rel="stylesheet" href="screen.css">
+	<script src="js/modernizr-1.7.min.js"></script>
+  </head>
+	
+  <body>
+  
+    <header role="banner" class="center clearfix"></header>
+
+    <div role="main" class="center">
+    
+      <h1 id="player1_wins" class="hideit">Player 1 wins!</h1>
+      <h1 id="player2_wins" class="hideit">Player 2 wins!</h1>
+      <div id="win_display"></div>
+      
+      <div id="player1">
+        <div id="controlpanel1" class="clearfix">
+          <h2 contenteditable="true">Player 1</h2>
+          <div id="player1_rock" class="play clearfix">
+	        <img id="rockImage_1" src="img/rock_small.png" width="50" alt="rock hand">
+	        <div class="button">
+	          <p>a</p>
+	        </div>
+	      </div>
+          <div id="player1_paper" class="play clearfix">
+	        <img id="paperImage_1" src="img/paper_small.png" width="50" alt="rock hand">
+	        <div class="button">
+	          <p>s</p>
+	        </div>
+	      </div>
+          <div id="player1_scissors" class="play clearfix">
+	        <img id="scissorsImage_1" src="img/scissors_small.png" width="50" alt="rock hand">
+	        <div class="button">
+	          <p>d</p>
+	        </div>
+	      </div>
+	      <div id="colors1">
+	        <div id="flesh_1"></div>
+	        <div id="flesh2_1"></div>
+	        <div id="brown_1"></div>
+	        <div id="brown2_1"></div>
+	        <div id="brown3_1"></div>
+	        <div id="yellow_1"></div>
+	        <div id="martian_1"></div>
+	        <div id="white_1"></div>
+	      </div>
+	    </div> <!-- controlPanel -->
+	    <div id="player1_display"></div>
+	    <div id="player1_color" class="flesh2 hideit" ></div>
+	  </div> <!-- player1 -->
+ 
+       <div id="player2">
+        <div id="controlpanel2" class="clearfix">
+          <h2 class="player2" contenteditable="true">Player 2</h2>
+          <div id="player2_scissors" class="play fr clearfix">
+	        <img id="scissorsImage_2" src="img/scissors_small.png" width="50" alt="rock hand">
+	        <div class="button">
+	          <p>'</p>
+	        </div>
+	      </div>   
+          <div id="player2_paper" class="play fr clearfix">
+	        <img id="paperImage_2" src="img/paper_small.png" width="50" alt="rock hand">
+	        <div class="button">
+	          <p>;</p>
+	        </div>
+	      </div>
+          <div id="player2_rock" class="play fr clearfix">
+	        <img id="rockImage_2" src="img/rock_small.png" width="50" alt="rock hand">
+	        <div class="button">
+	          <p>l</p>
+	        </div>
+	      </div>
+	      <div id="colors2" >
+	        <div id="flesh_2"></div>
+	        <div id="flesh2_2"></div>
+	        <div id="brown_2"></div>
+	        <div id="brown2_2"></div>
+	        <div id="brown3_2"></div>
+	        <div id="yellow_2"></div>
+	        <div id="martian_2"></div>
+	        <div id="white_2"></div>
+	      </div>
+	    </div> <!-- controlPanel -->
+	    <div id="player2_display" ></div>
+	    <div id="player2_color" class="flesh2 hideit"></div>
+	  </div> <!-- player2 -->
+	  
+    </div> <!-- role="main" -->
+    
+		<script src="js/jquery-1.4.4.min.js"></script>
+		<script src="js/rps.js"></script>
+
+        <!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet change the UA-XXXXX-X to be your site's ID -->
+  		<script>
+   			var _gaq = [['_setAccount', 'UA-5899894-11'], ['_trackPageview']];
+   			(function(d, t) {
+    			var g = d.createElement(t),
+        			s = d.getElementsByTagName(t)[0];
+    			g.async = true;
+    			g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    			s.parentNode.insertBefore(g, s);
+   			})(document, 'script');
+  		</script>  			
+  </body>
+</html>
